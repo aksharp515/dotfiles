@@ -52,8 +52,8 @@ inoremap <leader>' ''<ESC>i
 inoremap <leader>[ []<ESC>i
 
 " set ,gw to save right out of insert mode 
-inoremap <leader>gw <ESC>:w<CR>
-nnoremap <leader>gw <ESC>:w<CR>
+nnoremap <leader>w <ESC>:w<CR>
+nnoremap <leader>gw <ESC>:wq<CR>
 " set ,gg to quit from normal mode
 
 nnoremap <leader>gg <ESC>:q<CR>
@@ -76,7 +76,7 @@ onoremap E $
 " select the last inserted text 
 nnoremap gV `[v`]
 
-"g ctrl o so that it doesnt collide with 'go' in normal mode 
+" g ctrl o so that it doesnt collide with 'go' in normal mode 
 nnoremap g<C-O> o<ESC>v$hxk
 nnoremap gO O<ESC>v$hxj
 
@@ -93,3 +93,18 @@ let @a = '0f"iAP jk'
 
 " SETUP TAGS:
 set tags+=~/${PROJ}_tags
+
+" FOLDING:
+set foldenable 
+
+" show all folds 
+set foldlevelstart=10
+
+" 10 nested fold max
+set foldnestmax=10 
+
+" space remapped to open folds 
+nnoremap <space> za 
+
+" fold based on indent level 
+set foldmethod=indent
