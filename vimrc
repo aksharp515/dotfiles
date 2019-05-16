@@ -77,8 +77,8 @@ onoremap E $
 nnoremap gV `[v`]
 
 " g ctrl o so that it doesnt collide with 'go' in normal mode 
-nnoremap g<C-O> o<ESC>v$hxk
-nnoremap gO O<ESC>v$hxj
+nnoremap g<C-O> o<ESC>C<ESC>k
+nnoremap gO O<ESC>C<ESC>j
 
 " map 'jk' to the esacpe key in insert mode
 inoremap jk <ESC> 
