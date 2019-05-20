@@ -89,7 +89,7 @@ nnoremap g<C-O> o<ESC>C<ESC>k
 nnoremap gO O<ESC>C<ESC>j
 
 " map 'jk' to the esacpe key in insert mode
-inoremap jk <ESC> 
+inoremap jk <ESC>
 
 " maps often used commands but too lazy to 
 " MACROS: 
