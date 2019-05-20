@@ -51,12 +51,20 @@ inoremap <leader>" ""<ESC>i
 inoremap <leader>' ''<ESC>i
 inoremap <leader>[ []<ESC>i
 
+" set ,s and ,b to skip forwards and backwards one char 
+inoremap <leader>s <ESC>la
+inoremap <leader>b <ESC>ha
+
 " set ,gw to save right out of insert mode 
 nnoremap <leader>w <ESC>:w<CR>
 nnoremap <leader>gw <ESC>:wq<CR>
-" set ,gg to quit from normal mode
+inoremap <leader>w <ESC>:w<CR>
+inoremap <leader>gw <ESC>:wq<CR>
 
+" set ,gg to quit from normal mode
 nnoremap <leader>gg <ESC>:q<CR>
+nnoremap <leader>gt <ESC>:q!<CR>
+
 "auto center certain motions
 nnoremap G Gzz
 nnoremap n nzz
