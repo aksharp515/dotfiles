@@ -97,7 +97,7 @@ inoremap jk <ESC>
 let @c = '0I//jkj'
 let @b = '0Bxxj' 
 " add AP to the beginning of a comment 
-let @a = '0f"iAP jk'
+let @a = '0f"aAP jk'
 
 " SETUP TAGS:
 set tags+=~/${PROJ}_tags
